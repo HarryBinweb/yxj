@@ -1,0 +1,122 @@
+/*初始化*/
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	height: 100%;
+}
+body{
+	font-family: "microsoft yahei";
+}
+/*swiper*/
+.swiper-container {
+	width: 100%;
+    height: 100%;
+	background:#fff;
+}  
+.swiper-slide{
+	width:100%;
+	height:100%;
+	background:url(../upload/bg.jpg) no-repeat left top;
+	background-size:100% 100%;
+}
+/*底部箭头 dog*/
+#dog{
+	position: absolute;
+	width: 20px;
+	height: 15px;
+	z-index: 333;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -10px;
+	animation: dog 1.5s infinite ease-in-out;
+}
+@keyframes dog
+{
+0%   { opacity: 0 }
+50%  { opacity: 1 }
+100% { opacity: 0 }
+}
+
+@-moz-keyframes dog /* Firefox */
+{
+0%   { opacity: 0 }
+50%  { opacity: 1 }
+100% { opacity: 0 }
+}
+
+@-webkit-keyframes dog /* Safari 和 Chrome */
+{
+0%   { opacity: 0 }
+50%  { opacity: 1 }
+100% { opacity: 0 }
+}
+
+@-o-keyframes dog /* Opera */
+{
+0%   { opacity: 0 }
+50%  { opacity: 1 }
+100% { opacity: 0 }
+}/*动画结束*/
+/*第一页*/
+.allImg{
+	position: absolute;
+}
+.centerBox{
+	position: relative;
+	width: 100%;
+	height: 50%;
+	/*垂直居中*/
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	transform: translateY(50%);
+	-webkit-transform: translateY(50%);
+}
+.tBg{
+	width: 100%;
+}
+.tTit{
+	left: 70%;
+	width: 20%;
+}
+.txt{
+	width: 40%;
+	left: 20%;
+}
+.flower{
+	height: 45%;
+	width: 50%;
+	z-index: 1;
+}
+/*第二页*/
+.i2Tbg{
+	max-width: 65%;
+	height: 40%;
+	margin-left: 6%;
+	margin-top: 13%;
+}
+.i2Hbg{
+	height: 40%;
+	right: 5%;
+	margin-top: 8%;
+}
+.i2H{
+	height: 40%;
+	right: 2%;
+	margin-top: 8%;
+}
+.i2T{
+	max-width: 60%;
+	height: 35%;
+	margin-left: 9%;
+	margin-top: 18%;
+}
+.i2O{
+	width: 80%;
+	height: 40%;
+	bottom: 5%;
+	left: 10%;
+	/*transform: translateX(12%);*/
+}

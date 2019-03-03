@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="js/swiper.min.js"></script>
+	<script src="js/swiper.animate.min.js"></script>
+	<title>demo</title>
+
+</head>
+<body>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide ">
+				<img class="allImg flower ani" src="upload/flower.png" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
+				<div class="centerBox">
+					<img class="allImg tBg ani" src="upload/s1.png" alt="" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
+					<img class="allImg txt ani" src="upload/s1-t2.png" alt="" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">
+					<img class="allImg tTit ani" src="upload/s1-t1.png" alt="" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">
+				</div>
+				
+			</div>
+			<div class="swiper-slide ">
+				<img class="allImg ani i2Tbg" src="upload/s2-i3.png" alt="" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1s">
+				<img class="allImg ani i2Hbg" src="upload/s2-i1.png" alt="" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
+				<img class="allImg ani i2H" src="upload/s2-i2.png" alt="" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
+				<img class="allImg ani i2T" src="upload/s2-i4.png" alt="" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">
+				<img class="allImg ani i2O" src="upload/s2-i5.png" alt="" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="2s">
+			</div>
+			<div class="swiper-slide ">
+				<img class="allImg ani i2Tbg" src="upload/s2-i3.png" alt="" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1s">
+				<img class="allImg ani i2Hbg" src="upload/s2-i1.png" alt="" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
+				<img class="allImg ani i2H" src="upload/s3-i2.png" alt="" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
+				<img class="allImg ani i2T" src="upload/s3-i4.png" alt="" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">
+				<img class="allImg ani i2O" src="upload/s3-i5.png" alt="" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="2s">
+			</div>
+			<div class="swiper-slide ">
+				<img class="allImg flower ani" src="upload/flower.png" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
+				<div class="centerBox">
+					<img class="allImg tBg ani" src="upload/s1.png" alt="" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
+					<img class="allImg txt ani" src="upload/s1-t2.png" alt="" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">
+					<img class="allImg tTit ani" src="upload/s1-t1.png" alt="" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">
+				</div>
+			</div>
+		</div>
+		<div class="swiper-pagination">
+			<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+			<span class="swiper-pagination-bullet"></span>
+			<span class="swiper-pagination-bullet"></span>
+			<span class="swiper-pagination-bullet"></span>
+		</div>
+		<img src="imgs/web-swipe-tip.png" id="dog">
+	</div>
+	<script>
+
+ 	var mySwiper = new Swiper ('.swiper-container', {
+ 		//滑动方向
+   		direction : 'vertical',
+   		//分液器
+   		pagination: '.swiper-pagination',
+   		//鼠标滚轮滑动
+  		mousewheelControl : true,
+  		//每次滚动页面重载动画
+   		onInit: function(swiper){
+   		swiperAnimateCache(swiper);
+   		swiperAnimate(swiper);
+	  	},
+   		onSlideChangeEnd: function(swiper){
+		swiperAnimate(swiper);
+    	}	  
+   	})  
+	</script>
+</body>
+</html>
